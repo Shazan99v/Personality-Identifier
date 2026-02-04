@@ -52,10 +52,20 @@
 ---
 
 ## ▶ How to Run Project
-1. Clone the repository:  
+
+1. **Clone the repository:**  
    ```bash
-   git clone <your-repo-link>
-cd personality-identifier
-npm install         # installs dependencies
-npm install react-router-dom   # install React Router
-npm run dev        # run project (check console for correct port)
+   git clone https://github.com/Shazan99v/Personality-Identifier.git
+
+2. **Navigate to the project folder:**
+   ```bash
+    cd personality-identifier
+3. **Install dependencies:**
+   ```bash
+      npm install
+4. **install React Router**
+   ```bash     
+   npm install react-router-dom
+5. ** run project (check console for correct port)**
+   ```bash 
+   npm run dev        
