@@ -68,4 +68,10 @@
    npm install react-router-dom
 5. ** run project (check console for correct port)**
    ```bash 
-   npm run dev        
+   npm run dev
+
+## 🎥 Project Demo
+
+[![Watch the video](  https://youtu.be/5X1UABAuVW4)]
+
+ 
