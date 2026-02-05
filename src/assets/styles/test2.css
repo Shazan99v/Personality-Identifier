@@ -1,0 +1,161 @@
+.cont {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, navy, #b8b8cf, #2a1d9c);
+}
+
+/* ===== Global Container ===== */
+.test-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, navy, #b8b8cf, #2a1d9c);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Test Title ===== */
+.test-title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* ===== Question Card ===== */
+.question-card {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 22px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.question-card:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== Question Text ===== */
+.question-card p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+/* ===== Options Container ===== */
+.agree-disagree {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== Option Buttons ===== */
+.option {
+  flex: 1;
+  padding: 12px 8px;
+  border-radius: 14px;
+  border: none;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.option:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* ===== Active Option ===== */
+.option.active {
+  background: #ffffff;
+  color: #2a1d9c;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Strength-based emphasis ===== */
+.option[data-value="-2"].active {
+  background: #ffdddd;
+  color: #8b0000;
+}
+
+.option[data-value="-1"].active {
+  background: #ffeaea;
+  color: #a33;
+}
+
+.option[data-value="0"].active {
+  background: #f1f1f1;
+  color: #444;
+}
+
+.option[data-value="1"].active {
+  background: #e6f4ea;
+  color: #1e7f4f;
+}
+
+.option[data-value="2"].active {
+  background: #c9f0dc;
+  color: #0f5d3a;
+}
+
+/* ===== Submit Button ===== */
+.submit-btn {
+  margin-top: 35px;
+  padding: 16px 45px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  background: #ffffff;
+  color: #2a1d9c;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+}
+
+.submit-btn:disabled {
+  background: rgba(255, 255, 255, 0.4);
+  color: #555;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+  .test-title {
+    font-size: 24px;
+  }
+
+  .question-card {
+    padding: 20px;
+  }
+
+  .agree-disagree {
+    flex-direction: column;
+  }
+
+  .option {
+    width: 100%;
+    font-size: 14px;
+  }
+}

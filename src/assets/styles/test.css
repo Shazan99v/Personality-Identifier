@@ -1,0 +1,96 @@
+.test-body{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, navy, #b8b8cf, #2a1d9c);
+}
+.test-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.test-title {
+  text-align: center;
+  margin-bottom: 10px;
+  text-size-adjust: ;
+}
+
+/* Progress */
+.progress-bg {
+  width: 100%;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(to right, #1e40af, #3b82f6);
+  border-radius: 10px;
+  transition: .4s;
+}
+
+/* Question Card */
+.question-card {
+  background: rgba(255,255,255,.8);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.q-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Options */
+.option {
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  margin: 8px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  gap: 10px;
+}
+
+.option:hover {
+  background: #f8fafc;
+}
+
+.option.active {
+  background: #1e3a8a;
+  color: white;
+  transform: scale(1.02);
+}
+
+.badge {
+  background: #3b82f6;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #1e3a8a;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+}

@@ -1,0 +1,92 @@
+.home-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* LEFT SIDE */
+.home-content {
+  flex: 1;
+}
+
+.main-title {
+  font-size: 34px;
+  color: #1e3a8a;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.divider {
+  width: 120px;
+  height: 4px;
+  background: #1e3a8a;
+  border: none;
+  margin: 12px 0;
+}
+
+.sub-title {
+  font-size: 16px;
+  color: #555;
+}
+
+/* BUTTONS */
+.btn-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.test-btn {
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.primary {
+  background: #1e3a8a;
+  color: white;
+}
+
+.secondary {
+  background: #0f766e;
+  color: white;
+}
+
+.test-btn {
+  transition: .3s;
+}
+
+.test-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+
+/* RIGHT IMAGE */
+.home-image {
+  flex: 1;
+  text-align: center;
+}
+
+.home-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btn-group {
+    justify-content: center;
+  }
+}

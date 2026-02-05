@@ -1,0 +1,150 @@
+.MLH:hover{
+    color: blue;
+    cursor: pointer;
+}
+.intro-wrapper {
+  margin: 60px auto;
+  padding: 40px 0;
+
+  background:
+    linear-gradient(
+      to right,
+      #f0f5ff,
+      #ffffff
+    );
+}
+
+/* TOP PART */
+.intro-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* IMAGE */
+.intro-image {
+  flex: 1;
+  text-align: center;
+}
+
+.intro-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  height: 350px;
+  /* object-fit: fill; */
+}
+
+/* CONTENT */
+.intro-content {
+  flex: 1.2;
+}
+
+.org-name {
+  color: #1e3a8a;
+  margin: 0;
+}
+
+.sub-org {
+  color: #0f766e;
+  margin-top: 4px;
+}
+
+.para {
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: 'Times New Roman';
+}
+
+/* QUOTE */
+.quote {
+  margin: 12px 0;
+  padding: 10px 14px;
+
+  border-left: 4px solid #1e3a8a;
+  border-right: #1908af  solid 4px;
+  background: white;
+
+  font-style: italic;
+}
+
+/* ===== MISSION ===== */
+
+.mission-box {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* MISSION CARD */
+.m-card {
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+
+  transition: .3s;
+}
+
+.m-card {
+  --bg: #ffffff;
+  --hover-bg: #1908af;
+  --hover-text: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.m-card:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.m-card:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+
+.m-card:hover {
+  transform: translateY(-4px);
+}
+
+.last {
+  margin-top: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .intro-container {
+    flex-direction: column;
+  }
+
+  .mission-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+}

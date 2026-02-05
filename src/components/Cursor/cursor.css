@@ -1,0 +1,108 @@
+/* CORE CIRCLE - Tight & Responsive */
+.cursor-core {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background: #1e3a8a;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  /* Faster transition for the core to feel snappy */
+  transition: transform 0.1s ease-out, background 0.2s ease;
+  will-change: transform;
+}
+
+/* OUTER GLOW - The "Lag" Effect */
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: rgba(30, 58, 138, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9998;
+  /* Slower transition creates the organic trailing effect */
+  transition: transform 0.25s cubic-bezier(0.23, 1, 0.32, 1), 
+              width 0.3s ease, 
+              height 0.3s ease, 
+              background 0.3s ease;
+  box-shadow:
+    0 0 15px rgba(30, 58, 138, 0.2),
+    0 0 30px rgba(30, 58, 138, 0.1);
+  backdrop-filter: blur(3px);
+  will-change: transform;
+}
+
+/* HOVER STATES */
+/* Core expands slightly and darkens */
+.cursor-core.hover {
+  transform: translate(-50%, -50%) scale(0.8); /* Shrinking core on hover looks modern */
+  background: #000080; /* Valid 'navy' hex code */
+}
+
+/* Glow expands significantly and brightens */
+.cursor-glow.hover {
+  width: 70px;
+  height: 70px;
+  background: rgba(30, 58, 138, 0.15);
+  box-shadow:
+    0 0 25px rgba(30, 58, 138, 0.4),
+    0 0 50px rgba(30, 58, 138, 0.2);
+}
+/* BASE STYLES */
+.cursor-core, .cursor-glow {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  /* Initial position off-screen to prevent flash in corner */
+  left: -100px; 
+  top: -100px;
+}
+
+.cursor-core {
+  width: 12px;
+  height: 12px;
+  background: #1e3a8a;
+  border-radius: 50%;
+  transition: transform 0.1s ease-out, background 0.2s ease;
+}
+
+.cursor-glow {
+  width: 40px;
+  height: 40px;
+  background: rgba(30, 58, 138, 0.1);
+  border-radius: 50%;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+  box-shadow: 0 0 15px rgba(30, 58, 138, 0.2);
+  backdrop-filter: blur(2px);
+}
+
+/* HOVER EFFECT */
+.cursor-core.hover {
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+.cursor-glow.hover {
+  width: 65px;
+  height: 65px;
+  background: rgba(30, 58, 138, 0.15);
+}
+
+/* CLICK EFFECT */
+.cursor-core.clicking {
+  transform: translate(-50%, -50%) scale(0.4);
+}
+
+.cursor-glow.clicking {
+  transform: translate(-50%, -50%) scale(1.5);
+  opacity: 0; /* Fades out as it expands */
+  transition: all 0.3s ease-out;
+}

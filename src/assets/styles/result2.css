@@ -1,0 +1,61 @@
+/* ===== Result Header ===== */
+.result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+/* ===== User Text ===== */
+.user-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.user-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+}
+
+.user-gender {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ===== Logo (NO CIRCLE) ===== */
+.result-logo {
+  /* height: 55px; */
+  width: auto;
+  object-fit: contain;
+}
+
+/* ===== Personality Type ===== */
+.personality-type {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2a1d9c;
+  margin-bottom: 10px;
+  letter-spacing: 4px;
+}
+
+/* ===== Description ===== */
+.personality-line {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .result-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .result-logo {
+    height: 45px;
+  }
+}
