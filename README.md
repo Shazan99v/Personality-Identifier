@@ -73,5 +73,6 @@
 ## 🎥 Project Demo
 
 [![Watch the video](  https://youtu.be/5X1UABAuVW4)]
+[![Watch the video](https://img.youtube.com/vi/5X1UABAuVW4/0.jpg)](https://www.youtube.com/watch?v=5X1UABAuVW4)
 
  
