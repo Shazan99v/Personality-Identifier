@@ -106,3 +106,16 @@
   opacity: 0; /* Fades out as it expands */
   transition: all 0.3s ease-out;
 }
+
+/* Kill cursor on mobile */
+
+@media (hover: none), (pointer: coarse) {
+
+  .cursor-core,
+  .cursor-glow {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+}
+

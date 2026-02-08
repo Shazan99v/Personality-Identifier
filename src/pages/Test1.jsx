@@ -8,8 +8,7 @@ const Test1 = () => {
   const navigate = useNavigate();
   const [answers, setAnswers] = useState({});
 
-  const progress =
-    (Object.keys(answers).length / questions.length) * 100;
+  const progress = (Object.keys(answers).length / questions.length) * 100;
 
   const select = (id, type) => {
     setAnswers((prev) => ({
@@ -45,10 +44,7 @@ const Test1 = () => {
 
         {/* Progress Bar */}
         <div className="progress-bg">
-          <div
-            className="progress-fill"
-            style={{ width: `${progress}%` }}
-          />
+          <div className="progress-fill" style={{ width: `${progress}%` }} />
         </div>
 
         {questions.map((q) => (
@@ -58,31 +54,25 @@ const Test1 = () => {
             </div>
 
             <div
-              className={`option ${
-                answers[q.id] === q.typeA ? "active" : ""
-              }`}
+              className={`option ${answers[q.id] === q.typeA ? "active" : ""}`}
               onClick={() => select(q.id, q.typeA)}
             >
-              <span className="badge">A</span> {q.a}
+              <span className="badge">A</span>
+              <span className="option-text">{q.a}</span>
             </div>
 
             <div
-              className={`option ${
-                answers[q.id] === q.typeB ? "active" : ""
-              }`}
+              className={`option ${answers[q.id] === q.typeB ? "active" : ""}`}
               onClick={() => select(q.id, q.typeB)}
             >
-              <span className="badge">B</span> {q.b}
+              <span className="badge">B</span>
+              <span className="option-text">{q.b}</span>
             </div>
           </div>
         ))}
 
         {/* IMPORTANT: button type="button" */}
-        <button
-          type="button"
-          className="submit-btn"
-          onClick={submit}
-        >
+        <button type="button" className="submit-btn" onClick={submit}>
           Submit Test
         </button>
       </div>

@@ -18,3 +18,17 @@ button {
   max-width: 1000px;
   margin: auto;
 }
+
+/* HARD DISABLE CURSOR ON TOUCH DEVICES */
+
+@media (hover: none), (pointer: coarse) {
+  .cursor,
+  .custom-cursor,
+  .mouse-cursor,
+  [class*="cursor"] {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+}
