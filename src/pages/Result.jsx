@@ -21,59 +21,75 @@ const Result = () => {
   const gender = user?.gender || "Not specified";
 
   return (
-    <div className="result-page">
+    <>
+    <SEO
+  title={`${type} Personality Type | Traits, Meaning & Career Guide`}
+  description={`Discover ${type} personality traits, strengths, weaknesses, and career guidance based on scientific personality assessment.`}
+  keywords="personality type, career guidance, personality traits, psychology test"
+/>
+   <div className="result-page">
 
-      {/* ================= LEFT CARD ================= */}
-      <div className="card result-card">
-        <div className="profile-header">
-          <div className="profile-info">
-            <h3 className="user-name">{name}</h3>
-            <p className="user-gender">{gender}</p>
-          </div>
+  {/* ================= LEFT CARD ================= */}
+  <div className="card result-card">
 
-          {/* Logo on RIGHT */}
-          <img src={logo} alt="Logo" className="profile-logo" />
-
-          
-        </div>
-
-        <p className="personality-type">{type}</p>
-
-        <p className="personality-line">
-          {detail}
-        </p>
-
-        <button className="btn" onClick={() => navigate("/home")}>
-          Back to Home
-        </button>
+    <div className="profile-header">
+      <div className="profile-info">
+        <h2 className="user-name">{name}</h2>
+        <p className="user-gender">{gender}</p>
       </div>
 
-      {/* ================= RIGHT CARD ================= */}
-      <div className="card company-card">
-        <h2>Experts Personality Counselors®</h2>
-        <p><b>Founder:</b> Ghazi Shoaib Awan</p>
-        <p><b>Contact:</b> 0312-6231457</p>
-
-        <p className="company-desc">
-          Professional personality assessment and career counseling
-          based on internationally recognized psychological models.
-        </p>
-
-        <a href={founderWhatsApp} target="_blank" rel="noopener noreferrer">
-          <button className="btn whatsapp-btn">
-            Contact on WhatsApp
-          </button>
-        </a>
-      </div>
-
-      {/* ================= BOTTOM BLUR STRIP ================= */}
-      <div className="blur-strip">
-        <div className="scrolling-text">
-          Experts Personality Counselors® — ادارہ برائے نفسیاتی مشاورت، تعلیمی و کیریئر کونسلنگ
-        </div>
-      </div>
-
+      <img src={logo} alt="Expert’s Personality Counselors logo" className="profile-logo" />
     </div>
+
+    <h1 className="personality-type">
+      Your Personality Test Result: {type}
+    </h1>
+
+    <p className="personality-line">
+      {detail}
+    </p>
+
+    <p className="result-note">
+      This result is based on a scientifically designed personality assessment test that analyzes your behavior patterns, interests, and cognitive preferences to determine your personality type.
+    </p>
+
+    <button className="btn" onClick={() => navigate("/home")}>
+      Take Another Personality Test
+    </button>
+
+  </div>
+
+  {/* ================= RIGHT CARD ================= */}
+  <div className="card company-card">
+
+    <h2>
+      Expert’s Personality Counselors® — Personality Assessment & Career Counseling Platform
+    </h2>
+
+    <p><b>Founder:</b> Ghazi Shoaib Awan</p>
+    <p><b>Contact:</b> +92-312-6231457</p>
+
+    <p className="company-desc">
+      We provide professional <b>personality assessment tests, career counseling, and psychological guidance</b> based on internationally recognized personality theories and career interest models to help individuals make better academic and career decisions.
+    </p>
+
+    <a href={founderWhatsApp} target="_blank" rel="noopener noreferrer">
+      <button className="btn whatsapp-btn">
+        Get Career Guidance on WhatsApp
+      </button>
+    </a>
+
+  </div>
+
+  {/* ================= BOTTOM BLUR STRIP ================= */}
+  <div className="blur-strip">
+    <div className="scrolling-text">
+      Personality Test Results | Personality Type Analysis | Career Counseling | Psychological Assessment | Expert’s Personality Counselors®
+    </div>
+  </div>
+
+</div>
+</>
   );
 };
 

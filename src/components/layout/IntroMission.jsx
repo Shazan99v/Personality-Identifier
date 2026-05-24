@@ -6,83 +6,72 @@ const IntroMission = () => {
   
   
   return (
-    <section className="intro-wrapper">
+   <section className="intro-wrapper">
 
-      <div className="intro-container">
+  <div className="intro-container">
 
-        {/* LEFT IMAGE */}
-        <div className="intro-image" data-aos="fade-right">
-          <img src={aboutImg} alt="experts counselors" />
-        </div>
+    {/* LEFT IMAGE */}
+    <div className="intro-image" data-aos="fade-right">
+      <img src={aboutImg} alt="personality counseling experts" />
+    </div>
 
-        {/* RIGHT CONTENT */}
-        <div className="intro-content" data-aos="fade-left">
+    {/* RIGHT CONTENT */}
+    <div className="intro-content" data-aos="fade-left">
 
-          <h2 className="org-name">
-            Expert’s Personality Counselors® (Regd)
-          </h2>
+      <h2 className="org-name">
+        Expert’s Personality Counselors® (Registered)
+      </h2>
 
-          <h4 className="sub-org">
-            Institute for Psychological Guidance,  
-            Education & Career Counseling
-          </h4>
+      <h4 className="sub-org">
+        Institute for Psychological Guidance, Career Counseling & Personality Assessment
+      </h4>
 
-          <p className="para">
-            <b>Expert’s Personality Counselors® (Regd)</b> is a visionary  
-            and purpose-driven organization dedicated to helping  
-            individuals understand their <b>personality, mental strengths,  
-            interests, and potential</b> through scientifically designed  
-            assessment tools and professional counseling.
-          </p>
+      <p className="para">
+        <b>Expert’s Personality Counselors® (Registered)</b> is a professional organization dedicated to helping individuals discover their <b>personality type, cognitive strengths, interests, and career potential</b> through scientifically designed personality tests and psychological assessment tools.
+      </p>
 
-          <div className="quote">
-            “Every individual has unique potential,  
-            but not everyone gets the opportunity to discover it.”
-          </div>
-
-          <p className="para">
-            Our mission is to make <b>personality assessment and career  
-            guidance simple, accessible, and effective</b> through  
-            digital platforms, enabling students, parents, and  
-            professionals to make <b>confident and informed life  
-            decisions—anytime, anywhere.</b>
-          </p>
-
-        </div>
+      <div className="quote">
+        “Every individual has unique potential, but not everyone gets the opportunity to discover their true personality.”
       </div>
 
-      {/* ===== MISSION LIST ===== */}
+      <p className="para">
+        Our mission is to make <b>personality testing, career guidance, and psychological assessment</b> simple, accessible, and effective through digital platforms, helping students, parents, and professionals make <b>informed career and life decisions with confidence.</b>
+      </p>
 
-      <div className="mission-box">
+    </div>
+  </div>
 
-        <h3 className="MLH">Our Mission & Objectives</h3>
+  {/* ===== MISSION LIST ===== */}
 
-        <div className="mission-grid">
+  <div className="mission-box">
 
-          {[
-            "Promote self-awareness and self-discovery",
-            "Prevent wrong career choices & confusion",
-            "Align careers with personality & aptitude",
-            "Guide parents about children strengths",
-            "Reduce stress & decision pressure",
-            "Introduce scientific assessments in Pakistan",
-            "Bridge education, personality & career"
-          ].map((m, i) => (
-            <div key={i} className="m-card">
-              {m}
-            </div>
-          ))}
+    <h3 className="MLH">Our Mission & Objectives</h3>
 
+    <div className="mission-grid">
+
+      {[
+        "Promote self-awareness and personality discovery",
+        "Reduce wrong career choices and academic confusion",
+        "Align careers with personality type and aptitude",
+        "Guide parents about children's strengths and behavior",
+        "Reduce stress in academic and career decisions",
+        "Introduce scientific personality testing in Pakistan",
+        "Connect education, psychology, and career planning"
+      ].map((m, i) => (
+        <div key={i} className="m-card">
+          {m}
         </div>
+      ))}
 
-        <div className="quote last">
-          “When people understand themselves, their education improves,  
-          their careers become clearer, and their lives become more meaningful.”
-        </div>
+    </div>
 
-      </div>
+    <div className="quote last">
+      “When people understand their personality, they make better decisions, build better careers, and live more meaningful lives.”
+    </div>
 
-    </section>
+  </div>
+
+</section>
   );
 };
 

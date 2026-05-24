@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://experts-personality-identifier.netlify.app/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Test Pages -->
+  <url>
+    <loc>https://experts-personality-identifier.netlify.app/#/test1</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://experts-personality-identifier.netlify.app/#/test2</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Result Pages (example dynamic ones) -->
+  <url>
+    <loc>https://experts-personality-identifier.netlify.app/#/result</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://experts-personality-identifier.netlify.app/#/result2</loc>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

@@ -12,6 +12,11 @@ const Home = () => {
 
   return (
     <>
+    <SEO
+  title="Personality Test Online | Discover Your Personality Type"
+  description="Take free scientifically designed personality tests to discover your personality type, strengths, and career path in minutes."
+  keywords="personality test, online personality test, career test, personality assessment"
+/>
       <Navbar />
 
       <div className="home-container">
@@ -20,14 +25,13 @@ const Home = () => {
   <div className="home-content" data-aos="fade-right">
 
     <h1 className="main-title">
-      Discover Your Personality,  
-      Unlock Your Potential!
+      Discover Your Personality Type & Unlock Your True Potential
     </h1>
 
     <hr className="divider" />
 
     <p className="sub-title">
-      Scientifically crafted assessments & professional counseling
+      Take scientifically designed personality tests to understand your behavior, strengths, weaknesses, and career potential in minutes
     </p>
 
     <div className="btn-group" data-aos="zoom-in" data-aos-delay="200">
@@ -35,14 +39,14 @@ const Home = () => {
         className="test-btn primary"
         onClick={() => navigate("/test1")}
       >
-        Start Test 1
+        Start Personality Test 1
       </button>
 
       <button
         className="test-btn secondary"
         onClick={() => navigate("/test2")}
       >
-        Start Test 2
+        Start Personality Test 2
       </button>
     </div>
 
@@ -50,7 +54,7 @@ const Home = () => {
 
   {/* RIGHT IMAGE */}
   <div className="home-image" data-aos="fade-left">
-    <img src={heroImage} alt="personality" />
+    <img src={heroImage} alt="personality test illustration" />
   </div>
 
 </div>

@@ -48,67 +48,69 @@ const FounderSection = () => {
 
       <div className="service-box">
 
-        <h3>Our Digital Services (Website & Mobile App)</h3>
+  <h3>
+    Our Digital Services: Online Personality Assessment & Career Guidance Platform
+  </h3>
 
-        <div className="service-grid">
+  <div className="service-grid">
 
-          <div className="s-card" data-aos="flip-up">
-            <h4>Online Personality Assessment</h4>
-            <ul>
-              <li>Personality traits</li>
-              <li>Mental tendencies</li>
-              <li>Interests and strengths</li>
-              <li>Career compatibility</li>
-            </ul>
-          </div>
+    <div className="s-card" data-aos="flip-up">
+      <h4>Online Personality Assessment Test</h4>
+      <ul>
+        <li>Personality traits analysis</li>
+        <li>Cognitive patterns & behavior tendencies</li>
+        <li>Interests, strengths & weaknesses identification</li>
+        <li>Career compatibility based on personality type</li>
+      </ul>
+    </div>
 
-          <div className="s-card" data-aos="flip-up">
-            <h4>Career Counseling & Guidance</h4>
-            <ul>
-              <li>For students & graduates</li>
-              <li>For professionals</li>
-              <li>Personalized roadmaps</li>
-            </ul>
-          </div>
+    <div className="s-card" data-aos="flip-up">
+      <h4>Career Counseling & Professional Guidance</h4>
+      <ul>
+        <li>For students, graduates & professionals</li>
+        <li>Personalized career roadmaps</li>
+        <li>Career selection based on personality & skills</li>
+      </ul>
+    </div>
 
-          <div className="s-card" data-aos="flip-up">
-            <h4>Student & Parent Counseling</h4>
-            <ul>
-              <li>Understanding child abilities</li>
-              <li>Confident decisions</li>
-            </ul>
-          </div>
+    <div className="s-card" data-aos="flip-up">
+      <h4>Student & Parent Career Counseling</h4>
+      <ul>
+        <li>Understanding student abilities & personality type</li>
+        <li>Guidance for better academic decisions</li>
+      </ul>
+    </div>
 
-          <div className="s-card" data-aos="flip-up">
-            <h4>Stress & Emotional Support</h4>
-            <ul>
-              <li>Academic pressure</li>
-              <li>Career confusion</li>
-              <li>Motivation issues</li>
-            </ul>
-          </div>
+    <div className="s-card" data-aos="flip-up">
+      <h4>Stress Management & Emotional Support</h4>
+      <ul>
+        <li>Academic pressure & exam stress support</li>
+        <li>Career confusion & decision anxiety</li>
+        <li>Motivation & mental clarity improvement</li>
+      </ul>
+    </div>
 
-          <div className="s-card" data-aos="flip-up">
-            <h4>Personality Development</h4>
-            <ul>
-              <li>Confidence building</li>
-              <li>Communication skills</li>
-              <li>Life skills</li>
-            </ul>
-          </div>
+    <div className="s-card" data-aos="flip-up">
+      <h4>Personality Development Program</h4>
+      <ul>
+        <li>Confidence building techniques</li>
+        <li>Communication & interpersonal skills</li>
+        <li>Life skills & personal growth training</li>
+      </ul>
+    </div>
 
-          <div className="s-card" data-aos="flip-up">
-            <h4>Admissions Guidance</h4>
-            <ul>
-              <li>Study planning</li>
-              <li>Abroad guidance</li>
-              <li>Consultancy</li>
-            </ul>
-          </div>
+    <div className="s-card" data-aos="flip-up">
+      <h4>Academic & Admission Guidance</h4>
+      <ul>
+        <li>Study planning & subject selection</li>
+        <li>Career pathway planning</li>
+        <li>Study abroad guidance & consultancy</li>
+      </ul>
+    </div>
 
-        </div>
+  </div>
 
-      </div>
+</div>
 
     </section>
   );

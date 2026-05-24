@@ -1,0 +1,21 @@
+{
+  "name": "Expert's Personality Identifier",
+  "short_name": "Personality Identifier",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "description": "Discover your personality type in 5 minutes with our fast personality test.",
+  "icons": [
+    {
+      "src": "/fav-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/fav-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

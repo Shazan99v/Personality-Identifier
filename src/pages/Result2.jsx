@@ -45,65 +45,84 @@ const Result2 = () => {
   const founderWhatsApp = "https://wa.me/923126231457";
 
   return (
-    <div className="result-page">
+    <>
+    <SEO
+  title={` Personality Type | Traits, Meaning & Career Guide`}
+  description={`Discover personality traits, strengths, weaknesses, and career guidance based on scientific personality assessment.`}
+  keywords="personality type, career guidance, personality traits, psychology test"
+/>
+   <div className="result-page">
 
-      {/* Left Card: User Result */}
-      <div className="card result-card">
+  {/* Left Card: User Result */}
+  <div className="card result-card">
 
-        {/* Profile Header */}
-        <div className="profile-header">
-          <div className="profile-info">
-            <h3 className="user-name">{name}</h3>
-            <p className="user-gender">{gender}</p>
-          </div>
-
-          {/* Logo */}
-          <img src={logo} alt="Logo" className="profile-logo" />
-        </div>
-
-        {/* Result */}
-        <p className="personality-type">{rankedTypes}</p>
-
-        <p className="personality-line">
-          Your RIASEC career interests are:
-          <br />
-          <b>{rankedTypes}</b>
-        </p>
-
-        <button className="btn" onClick={() => navigate("/home")}>
-          Back to Home
-        </button>
+    {/* Profile Header */}
+    <div className="profile-header">
+      <div className="profile-info">
+        <h2 className="user-name">{name}</h2>
+        <p className="user-gender">{gender}</p>
       </div>
 
-      {/* Right Card: Company Info */}
-      <div className="card company-card">
-        <h2>Experts Personality Counselors®</h2>
-        <p><b>Founder:</b> Ghazi Shoaib Awan</p>
-        <p><b>Contact:</b> 0312-6231457</p>
-        <p className="company-desc">
-          We provide professional personality analysis and career guidance
-          based on scientifically validated psychological models.
-        </p>
-
-        <a
-          href={founderWhatsApp}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button className="btn whatsapp-btn">
-            Contact on WhatsApp
-          </button>
-        </a>
-      </div>
-
-      {/* Bottom Animated Strip */}
-      <div className="blur-strip">
-        <div className="scrolling-text">
-          Experts Personality Counselors® — ادارہ برائے نفسیاتی مشاورت، تعلیمی و کیریئر کونسلنگ
-        </div>
-      </div>
-
+      <img src={logo} alt="Expert’s Personality Counselors logo" className="profile-logo" />
     </div>
+
+    <h1 className="personality-type">
+      Your RIASEC Career Interest Profile
+    </h1>
+
+    <p className="personality-line">
+      Based on the Holland Code (RIASEC) personality model, your career interest profile is:
+    </p>
+
+    <p className="personality-line">
+      <b>{rankedTypes}</b>
+    </p>
+
+    <p className="result-note">
+      This result is calculated using a scientifically validated career interest assessment model that helps identify suitable career fields based on your personality, interests, and behavioral preferences.
+    </p>
+
+    <button className="btn" onClick={() => navigate("/home")}>
+      Take Another Career Interest Test
+    </button>
+
+  </div>
+
+  {/* Right Card: Company Info */}
+  <div className="card company-card">
+
+    <h2>
+      Expert’s Personality Counselors® — Career Guidance & Personality Assessment Platform
+    </h2>
+
+    <p><b>Founder:</b> Ghazi Shoaib Awan</p>
+    <p><b>Contact:</b> +92-312-6231457</p>
+
+    <p className="company-desc">
+      We provide professional <b>RIASEC career interest tests, personality assessments, and career counseling</b> based on internationally recognized psychological models such as the Holland Code system to help individuals choose the right career path.
+    </p>
+
+    <a
+      href={founderWhatsApp}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button className="btn whatsapp-btn">
+        Get Career Guidance on WhatsApp
+      </button>
+    </a>
+
+  </div>
+
+  {/* Bottom Animated Strip */}
+  <div className="blur-strip">
+    <div className="scrolling-text">
+      RIASEC Career Interest Test Results | Holland Code Personality Types | Career Guidance | Psychological Assessment | Expert’s Personality Counselors®
+    </div>
+  </div>
+
+</div>
+</>
   );
 };
 

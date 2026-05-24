@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import { Helmet } from "react-helmet-async";
 import "../assets/styles/login.css";
 
 const Login = () => {
@@ -24,6 +25,15 @@ const Login = () => {
   };
 
   return (
+    <>
+     <Helmet>
+        <title>Login | Personality Identifier</title>
+
+        <meta
+          name="robots"
+          content="noindex, nofollow"
+        />
+      </Helmet>
     <div className="login-container">
       <h2>Login</h2>
 
@@ -47,6 +57,7 @@ const Login = () => {
         New user? <Link to="/signup">Signup</Link>
       </p>
     </div>
+    </>
   );
 };
 

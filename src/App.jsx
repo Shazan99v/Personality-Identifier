@@ -4,6 +4,7 @@ import { AuthProvider } from "./context/AuthContext";
 import Cursor from "./components/Cursor/Cursor.jsx";
 import { useEffect, useState } from "react";
 
+
 function App() {
 
   const [enableCursor, setEnableCursor] = useState(false);

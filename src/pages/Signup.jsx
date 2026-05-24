@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import { Helmet } from "react-helmet-async";
 import "../assets/styles/login.css";
 
 const Signup = () => {
@@ -33,6 +34,15 @@ const Signup = () => {
   };
 
   return (
+    <>
+    <Helmet>
+  <title>Signup | Personality Identifier</title>
+
+  <meta
+    name="robots"
+    content="noindex, nofollow"
+  />
+</Helmet>
     <div className="login-container">
       <h2>Create Account</h2>
 
@@ -77,6 +87,7 @@ const Signup = () => {
         Already have account? <Link to="/login">Login</Link>
       </p>
     </div>
+    </>
   );
 };
 

@@ -38,46 +38,63 @@ const Test1 = () => {
   };
 
   return (
-    <div className="test-body">
-      <div className="test-container">
-        <h2 className="test-title">Personality Assessment</h2>
+    <>
+    <SEO
+  title="Free Personality Assessment Test | Answer Questions & Get Results"
+  description="Take our free personality assessment test to understand your behavior, strengths, and career compatibility."
+  keywords="personality test online, free personality quiz, personality assessment"
+/>
 
-        {/* Progress Bar */}
-        <div className="progress-bg">
-          <div className="progress-fill" style={{ width: `${progress}%` }} />
-        </div>
+  <div className="test-body">
 
-        {questions.map((q) => (
-          <div key={q.id} className="question-card">
-            <div className="q-header">
-              Question {q.id} / {questions.length}
-            </div>
+    <div className="test-container">
 
-            <div
-              className={`option ${answers[q.id] === q.typeA ? "active" : ""}`}
-              onClick={() => select(q.id, q.typeA)}
-            >
-              <span className="badge">A</span>
-              <span className="option-text">{q.a}</span>
-            </div>
+      <h1 className="test-title">
+        Free Personality Assessment Test
+      </h1>
 
-            <div
-              className={`option ${answers[q.id] === q.typeB ? "active" : ""}`}
-              onClick={() => select(q.id, q.typeB)}
-            >
-              <span className="badge">B</span>
-              <span className="option-text">{q.b}</span>
-            </div>
-          </div>
-        ))}
+      <p className="test-intro">
+        Take this scientifically designed personality test to understand your personality type, behavior patterns, strengths, and career compatibility. Answer all questions honestly for accurate results.
+      </p>
 
-        {/* IMPORTANT: button type="button" */}
-        <button type="button" className="submit-btn" onClick={submit}>
-          Submit Test
-        </button>
+      {/* Progress Bar */}
+      <div className="progress-bg">
+        <div className="progress-fill" style={{ width: `${progress}%` }} />
       </div>
+
+      {questions.map((q) => (
+        <div key={q.id} className="question-card">
+
+          <div className="q-header">
+            Question {q.id} / {questions.length}
+          </div>
+
+          <div
+            className={`option ${answers[q.id] === q.typeA ? "active" : ""}`}
+            onClick={() => select(q.id, q.typeA)}
+          >
+            <span className="badge">A</span>
+            <span className="option-text">{q.a}</span>
+          </div>
+
+          <div
+            className={`option ${answers[q.id] === q.typeB ? "active" : ""}`}
+            onClick={() => select(q.id, q.typeB)}
+          >
+            <span className="badge">B</span>
+            <span className="option-text">{q.b}</span>
+          </div>
+        </div>
+      ))}
+
+      <button type="button" className="submit-btn" onClick={submit}>
+        Get My Personality Result
+      </button>
+
     </div>
-  );
+  </div>
+  </>
+);
 };
 
 export default Test1;
