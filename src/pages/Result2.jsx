@@ -3,6 +3,7 @@ import { useAuth } from "../context/AuthContext";
 import riasecQuestions from "../utils/riasecQuestions";
 import logo from "../assets/images/main.logorr.jpeg";
 import "../assets/styles/result.css";
+import SEO from "../components/SEO";
 
 const Result2 = () => {
   const navigate = useNavigate();

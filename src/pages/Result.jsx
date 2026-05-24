@@ -4,6 +4,7 @@ import { getPersonalityDetail } from "../utils/personalityCalculator";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import "../assets/styles/result.css";
+import SEO from "../components/SEO";
 
 const Result = () => {
   const { user } = useAuth();

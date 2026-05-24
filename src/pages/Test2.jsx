@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import riasecQuestions from "../utils/riasecQuestions";
 import "../assets/styles/test2.css";
+import SEO from "../components/SEO";
 
 const options = [
   { label: "Strongly Disagree", value: -2 },

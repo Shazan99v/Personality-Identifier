@@ -3,6 +3,7 @@ import questions from "../utils/question";
 import { calculateType } from "../utils/personalityCalculator";
 import { useNavigate } from "react-router-dom";
 import "../assets/styles/test.css";
+import SEO from "../components/SEO";
 
 const Test1 = () => {
   const navigate = useNavigate();

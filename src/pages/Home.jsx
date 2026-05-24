@@ -6,6 +6,7 @@ import PotentialSection from  "../components/layout/CardSection";
 import IntroMission from "../components/layout/IntroMission";
 import FounderSection from "../components/layout/FounderSection";
 import WhyChoose from "../components/layout/WhyChoose";
+import SEO from "../components/SEO";
 
 const Home = () => {
   const navigate = useNavigate();
